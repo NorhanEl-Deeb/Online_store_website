@@ -1,0 +1,322 @@
+/*########################### This code is written by Norhan El-Deeb @2019 #########################*/
+
+/*-------------------------------------------global tags style--------------------------------------*/
+a{
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a:hover{
+    color: #6c757d;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+section{
+    padding: 50px 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    border:none;
+    color: #6c757d;
+}
+
+.btn-bg{
+    color: #fff;
+    background: linear-gradient(to left, #23d5e3, #9149b9);
+}
+
+.btn-bg:hover{
+    color: #fff;
+    background: linear-gradient(to right, #23d5e3, #9149b9);
+}
+
+.text-clipped{
+    padding: 1px;
+    background: linear-gradient(to bottom, #23d5e3, #9149b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/*-------------------------------------------Nav Bar style--------------------------------------*/
+.custom-nav-container{
+    position: relative;
+    z-index: 1;
+}
+
+.custom-nav-container i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*To make it responsive in mobile view*/
+.main-nav-outer{
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    border-left:5px solid #eee;
+    z-index: 1500;
+    transition: 650ms all; 
+}
+
+.main-nav-outer.open-menu{
+    right: 0;
+}
+
+.menu-close-icon{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.main-nav .nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-icons-container{
+    width:100%;
+    max-width: 166px;
+}
+
+.nav-icons-container i:hover {
+    opacity: .9;
+}
+
+.navbar-brand i{
+    font-size: 40px;
+}
+
+.navbar-brand i span{
+    font-size: 25px;
+    font-family: fantasy;
+    font-weight: 100;
+}
+
+.nav-icons > a{
+    position: relative;
+}
+
+.nav-icons > a > .badge{
+    position: absolute;
+    top: -10px;
+    right: -16px;
+    background-color: #9149b9;
+    color: #fff;
+    border-radius: 100%;
+}
+
+.nav-icons .dropdown-menu{
+    margin-top: 40px;
+    margin-left: -203px;
+    position: relative;
+    background-color: #fff;
+}
+
+.nav-icons .dropdown-menu::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 50px;
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+    border: inherit;
+    transform: rotate(45deg);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+.dropdown-item{
+    color:#333;
+}
+
+/*Promotions section style*/
+.promotions {
+    background-color: #333;
+    font-size: 14px;
+}
+
+/*carousel section style*/
+.carousel{
+    z-index: 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev{
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.carousel-control-prev{
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.carousel-control-next{
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+/*To make it responsive in desktop view*/
+@media(min-width:992px){
+    .main-nav-outer{
+        width: initial;
+        height: initial;
+        background-color: initial;
+        position: initial;
+        border: none;
+    }
+
+    .nav-icons .dropdown-menu{
+        margin-left: -244px;
+    }
+
+    .nav-icons .dropdown-menu::before{
+        right: 5px;
+    }
+
+}
+
+/*-------------------------------------------Brands section style--------------------------------------*/
+.featured-brands img{
+    max-width: 120px;
+    max-height: 120px;
+    opacity: .7;
+    transition: opacity 650ms;
+
+}
+
+.featured-brands img:hover{
+    opacity: 1;
+}
+
+/*-------------------------------------------Products section style--------------------------------------*/
+.p-img{
+    padding: 15px;
+    margin: auto;
+}
+
+/*-------------------------------------------Services section style--------------------------------------*/
+.our-services-icon{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+    /*method to make rounded-border with gradient*/
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    border-radius: 100%;
+}
+
+.our-services-icon::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(to bottom,#23d5e3,#9149b9); 
+}
+
+.our-services-icon i{
+    font-size: 40px;
+}
+
+.our-services-description h5{
+    font-size: 16px;
+}
+
+.our-services-description p{
+    font-size: 14px;
+}
+
+.our-services{
+    background-color: #f5f5f5;
+}
+
+/*-------------------------------------------Footer section style--------------------------------------*/
+footer{
+    color: #fff;
+    background-color: #151515;
+}
+
+.footer-title{
+    position: relative;
+}
+
+.footer-title h5{
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .75);
+}
+
+.custom-border{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.custom-border::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(to left,#23d5e3,#9149b9);
+}
+
+.footer-list li{
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    margin: 15px 0;
+    padding: 5px 0;
+}
+
+.footer-list li:last-child{
+    border: none;
+}
+
+.footer-link{
+    color: #fff !important;
+    transition: opacity 650ms;
+}
+
+.footer-link:hover{
+    opacity: .6;
+}
+
+.line{
+    color: #6c757d;
+}
+
+
+
+
+

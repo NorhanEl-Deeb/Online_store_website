@@ -1,0 +1,476 @@
+<!-- ########################## This code is written by Norhan El-Deeb @2019 ######################### -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AYA Beauty Shop</title>
+
+    <!-- Import Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Import main.css -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!---------------------------------- Nav Bar --------------------------------------------------->
+    <header>
+        <!--bootstrap class added-->
+        <div class="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm">
+            <!--bootstrap class added-->
+            <a href="#" class="text-clipped navbar-brand">
+                <!--bootstrap class added-->
+                <i class="fab fa-asymmetrik d-flex">
+                    <!--bootstrap class added-->
+                    <span class="m-auto">AYA Beauty</span>
+                </i>
+            </a>
+
+            <!--bootstrap class added-->
+            <div class="main-nav-outer d-flex">
+                <i class="fas fa-times text-clipped menu-close-icon d-lg-none"></i>
+                <!--bootstrap class added-->
+                <nav class="main-nav navbar navbar-light navbar-expand-lg text-center m-auto">
+                    <!--bootstrap class added-->
+                    <ul class="navbar-nav d-flex">
+                        <!--bootstrap class added-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <!--bootstrap class added-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <!--bootstrap class added-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Best-Sellers</a>
+                        </li>
+                        <!--bootstrap class added-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Arrivals</a>
+                        </li>
+                        <!--bootstrap class added-->
+                        <li>
+                            <a class="nav-link" href="#">Sale</a>
+                        </li>
+                        <!--bootstrap class added-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--bootstrap class added-->
+            <div class="nav-icons-container d-flex justify-content-between">
+                <div class="nav-icons">
+                    <a href="#">
+                        <i class="fas fa-search text-clipped"></i>
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <a href="#">
+                        <i class="fas fa-shopping-bag bag-item-count text-clipped"></i>
+                        <span class="badge">0</span>
+                    </a>
+                </div>
+                <div class="nav-icons">
+                    <!--bootstrap class added-->
+                    <div class="dropdown">
+                        <a href="#" class=" dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-user text-clipped"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <form action="" class="p-2 text-secondary">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Enter your password"
+                                        required>
+                                </div>
+                                <div class="form-check ">
+                                    <input type="checkbox" class="form-check-input" id="dropdown-checkbox">
+                                    <label class="form-check-label" for="dropdown-checkbox">Remember me</label>
+                                </div>
+                                <button type="submit" class="btn btn-bg my-2">Login</button>
+
+                            </form>
+                            <div class="dropdown-divider mt-0"></div>
+                            <a href="#" class="dropdown-item">Don't have an account? Sign up</a>
+                            <a href="#" class="dropdown-item">Forgot password? Reset now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="nav-icons d-lg-none">
+                    <i class="fas fa-bars open-menu-icon text-clipped"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Promotions section -->
+        <div class="promotions text-white text-center py-2 mb-5">
+            <span>
+                <span class="text-uppercase font-weight-bold">Free shipping</span> on Orders costs 1000 L.E or more!
+            </span>
+        </div>
+
+        <!-- Carousel section -->
+        <div class="container">
+            <div class="carousel slide" id="carousel-indicators" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#carousel-indicators" data-slide-to="0"></li>
+                    <li data-target="#carousel-indicators" data-slide-to="1"></li>
+                    <li data-target="#carousel-indicators" data-slide-to="2"></li>
+                    <li data-target="#carousel-indicators" data-slide-to="3"></li>
+                    <li data-target="#carousel-indicators" data-slide-to="4"></li>
+                </ol>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <a href="#">
+                            <img class="img-fluid d-md-none w-100" src="./images/5-mobile.jpg" alt="">
+                            <img class="img-fluid d-none d-md-block w-100" src="./images/5-web.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="img-fluid d-md-none w-100" src="./images/1-mobile.jpg" alt="">
+                            <img class="img-fluid d-none d-md-block w-100 " src="./images/1-web.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="img-fluid d-md-none w-100" src="./images/2-mobile.jpg" alt="">
+                            <img class="img-fluid d-none d-md-block w-100" src="./images/2-web.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="img-fluid d-md-none w-100" src="./images/3-mobile.jpg" alt="">
+                            <img class="img-fluid d-none d-md-block w-100" src="./images/3-web.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="img-fluid d-md-none w-100" src="./images/4-mobile.jpg" alt="">
+                            <img class="img-fluid d-none d-md-block w-100" src="./images/4-web.jpg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel-indicators" role="button" data-slide="prev">
+                    "<i class="fas fa-chevron-left text-clipped"></i>
+                </a>
+                <a class="carousel-control-next" href="#carousel-indicators" role="button" data-slide="next">
+                    <i class="fas fa-chevron-right text-clipped"></i>
+                </a>
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <!------------------------------------ Brands Section --------------------------------------------------->
+    <section class="featured-brands">
+
+        <div class="container">
+            <div class="row align-items-center text-center">
+                <div class="col-12 col-sm-6 col-md-2 mb-5">
+                    <a href="#">
+                        <img src="./images/chanel-2.svg" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2 mb-5">
+                    <a href="#">
+                        <img src="./images/mac-cosmetics.svg" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2 mb-5">
+                    <a href="#">
+                        <img src="./images/giorgio-armani-2.svg" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2 mb-5">
+                    <a href="#">
+                        <img src="./images/l-oreal-3.svg" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2 mb-5">
+                    <a href="#">
+                        <img src="./images/maybelline-new-york.svg" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2 mb-5">
+                    <a href="#">
+                        <img src="./images/nyx-cosmetics.svg" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!------------------------------------ Products Section --------------------------------------------------->
+    <section class="products pt-0">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <h1 class="text-clipped text-uppercase">Products</h1>
+                <p class="text-secondary">For Everyday Elegance </p>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 p-img">
+                    <a href="#">
+                        <img src="./images/p1.jpg" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a href="#">
+                            <span class="text-uppercase font-weight-bold">LANCOME red velvet color lipstick</span>
+                            <br>
+                            <span>Shop Now</span> <i class="fas fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-img">
+                    <a href="#">
+                        <img src="./images/p-2.jpg" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a href="#">
+                            <span class="text-uppercase font-weight-bold">Rose shades eyeshadow</span>
+                            <br>
+                            <span>Shop Now</span> <i class="fas fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-img">
+                    <a href="#">
+                        <img src="./images/p-3.jpg" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a href="#">
+                            <span class="text-uppercase font-weight-bold">chanel foundation</span>
+                            <br>
+                            <span>Shop Now</span> <i class="fas fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-img">
+                    <a href="#">
+                        <img src="./images/p-7.jpg" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a href="#">
+                            <span class="text-uppercase font-weight-bold">chanel n5 perfume</span>
+                            <br>
+                            <span>Shop Now</span> <i class="fas fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-img">
+                    <a href="#">
+                        <img src="./images/p-6.jpg" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a href="#">
+                            <span class="text-uppercase font-weight-bold">gold standard mascara</span>
+                            <br>
+                            <span>Shop Now</span> <i class="fas fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-img">
+                    <a href="#">
+                        <img src="./images/p-5.jpg" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a href="#">
+                            <span class="text-uppercase font-weight-bold">si giorgio armani perfume</span>
+                            <br>
+                            <span>Shop Now</span> <i class="fas fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!------------------------------------ Services Section --------------------------------------------------->
+    <section class="our-services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-sm-6 col-md-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto">
+                        <i class="fas fa-shipping-fast text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase font-weight-bold">free worldwide shipping</h5>
+                        <p>Free Shipping for orders over 1000 L.E</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto">
+                        <i class="fas fa-sync text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase font-weight-bold">refund guarantee</h5>
+                        <p>We refund you within 30 days of purchase</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto">
+                        <i class="fas fa-headset text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase font-weight-bold">24/7 customer support</h5>
+                        <p>On demand 24/7 customer support</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-5">
+                    <div class="our-services-icon d-flex mb-3 mx-auto">
+                        <i class="fas fa-credit-card text-clipped m-auto"></i>
+                    </div>
+                    <div class="our-services-description">
+                        <h5 class="text-uppercase font-weight-bold">secure online payments</h5>
+                        <p>Your data is encrypted</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!------------------------------------ Footer Section --------------------------------------------------->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <address>
+                        <strong class="h3 font-weight-normal">Contact Us</strong>
+                        <br>
+                        <br>
+                        Address:
+                        123 Simpsons Street
+                        <br>
+                        FairLand, Parkway 3211
+                        <br>
+                        Phone: (+0100) 45656565 - (+0100) 56778975
+                        <br>
+                        Working Hours: Sunday to Thursday (10 AM - 6 PM)
+                    </address> 
+                    <br>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-title">
+                        <h5>Our Mission</h5>
+                        <span class="custom-border"></span>
+                    </div>
+
+                    <ul class="footer-list">
+                        <li>
+                            <a class="footer-link" href="#">Customer Focused</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Innovation</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Efficiency<a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Results Orientation</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Agility</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="footer-title">
+                        <h5>Customer Service</h5>
+                        <span class="custom-border"></span>
+                    </div>
+
+                    <ul class="footer-list">
+                        <li>
+                            <a class="footer-link" href="#">My Account</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Order History</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Delivery Information</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">How To Order</a>
+                        </li>
+                    </ul>
+                    </div>
+
+                    <div class="d-md-flex justify-content-between align-items-center text-center w-100">
+                        <div>
+                            <p class=" line m-0 text-sm order-1">Made by Norhan El-Deeb &copy; 2019 All rights reserved.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!---------------------------------- Script Tags --------------------------------------------------->
+    <!-- Import jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+
+    <!-- Import popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+
+    <!-- Import BootStrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Import our file -->
+    <script src="./data.js"></script>
+
+
+
+</body>
+
+</html>
